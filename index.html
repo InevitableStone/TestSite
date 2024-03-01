@@ -1,7 +1,37 @@
 <!DOCTYPE html>
-<html>
-<head> Welcome! </head>
-<body> 
-  <p> Aasutos </p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Game</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        canvas {
+            display: block;
+            margin: auto;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+
+    <script>
+        // Add your JavaScript code here
+        window.onload = function() {
+            var canvas = document.getElementById("gameCanvas");
+            var ctx = canvas.getContext("2d");
+
+            // Draw something on the canvas
+            ctx.fillStyle = "red";
+            ctx.fillRect(50, 50, 100, 100);
+        };
+    </script>
 </body>
 </html>
